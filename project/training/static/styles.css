@@ -1,0 +1,83 @@
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+
+
+}
+nav .navbar-brand .red
+{
+    color: crimson;
+}
+nav .navbar-brand .white
+{
+    color: white;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+main table
+{
+    /* left-align contents */
+    text-align: left;
+}
+
+main tfoot
+{
+    /* boldface tables' footers */
+    font-weight: bold;
+}
+.button
+{
+    color: white;
+    background-color: crimson;
+    padding: 5px 40px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+}
+.button:hover
+{
+    color: crimson;
+    background-color: black;
+}
+.button2
+{
+    color: white;
+    background-color: crimson;
+    padding: 5px 40px;
+    border-radius: 4px;
+    border: 2px solid crimson;
+    font-weight: bold;
+}
+.button2:hover
+{
+    color: crimson;
+    background-color: white;
+    transition-duration: 0.3s;
+}
+.picture
+{
+    background-image: url(/static/background.jpg);
+}

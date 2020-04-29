@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+         <tbody>
+            <tr>
+                <th>Class</th>
+                <th>Number Of People</th>
+                <th>Total Time</th>
+                <th>Minutes Per Person</th>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>{{ count20 }}</td>
+                <td>{{ time20 }}</td>
+                <td>{{ mpp20 }}</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>{{ count21 }}</td>
+                <td>{{ time21 }}</td>
+                <td>{{ mpp21 }}</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>{{ count22 }}</td>
+                <td>{{ time22 }}</td>
+                <td>{{ mpp22 }}</td>
+            </tr>
+            <tr>
+                <td>2023</td>
+                <td>{{ count23 }}</td>
+                <td>{{ time23 }}</td>
+                <td>{{ mpp23 }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

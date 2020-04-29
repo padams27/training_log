@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Add
+{% endblock %}
+
+{% block main %}
+    <form action="/add" method="post">
+        <div class="form-group">
+            <label>Workout type   </label>
+                <select class="form-control" name="type" type="type">
+                    <option value="ergo">Ergo</option>
+                    <option value="bike">Bike</option>
+                    <option value="run">Run</option>
+                    <option value="weights">Weights</option>
+                    <option value="other">Other</option>
+                </select>
+        </div>
+        <div class="form-group">
+            <label>Workout Time</label>
+            <input class="form-control" autocomplete="off" name="time" placeholder="minutes" type="number">
+        </div>
+        <button class="button" type="submit">Add</button>
+    </form>
+{% endblock %}
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Class
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td colspan="1">Minutes Per Person</td>
+                <td>{{ avg_time  }}</td>
+            </tr>
+        </head>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Time</th>
+            </tr>
+            {% for i in numbers %}
+            <tr>
+                <td>{{ history[i]['username'] }}</td>
+                <td>{{ history[i]['time'] }}</td>
+                {% endfor %}
+            </tr>
+
+        </tbody>
+    </table>
+{% endblock %}

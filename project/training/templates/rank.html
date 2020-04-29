@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Rankings
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+         <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Time</th>
+            </tr>
+            {% for i in numbers %}
+            <tr>
+                <td>{{ history[i]['username'] }}</td>
+                <td>{{ history[i]['time'] }}</td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
+
+
+
